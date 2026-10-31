@@ -12,5 +12,5 @@ test('TC02 - Verify the presence of the main sections', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'About' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Work' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Contact' })).toBeVisible();
-})
+});
 });

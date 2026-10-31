@@ -16,7 +16,7 @@ test.describe('Navigation', () => {
         'IntroductionOverview.Automated QA Engineer specializing in Playwright and',
         { exact: false }
       )
-    ).toBeInViewport();
+    ).toBeInViewport({ timeout: 5000 });
   });
 
   test('TC02 - Work section', async ({ page }) => {
@@ -29,7 +29,7 @@ test.describe('Navigation', () => {
         'What I have done so farWork Experience.Click on the icons to navigate to the',
         { exact: false }
       )
-    ).toBeInViewport();
+    ).toBeInViewport({ timeout: 5000 });
   });
 
   test('TC03 - Contact section', async ({ page }) => {
@@ -41,7 +41,7 @@ test.describe('Navigation', () => {
       page.locator('div')
         .filter({ hasText: 'Get in touchContact.Your' })
         .nth(3)
-    ).toBeInViewport();
+    ).toBeInViewport({ timeout: 5000 });
   });
 
 });
